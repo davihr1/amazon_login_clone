@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    object-position: bottom;
+    background: white;
+    justify-content: center;
+}
+
+header .one{
+    display: flex;
+    width: 6.500rem;
+    height: 2.500rem;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    background-image: url("./assets/amazon_imgs.png");
+    background-size: 23rem;
+    background-position-y:-30mm ;
+}
+
+header .two {
+    display: flex;
+    width: 2.600rem;
+    background-repeat: no-repeat;
+    height: 0.800rem;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    background-image: url("./assets/amazon_imgs.png");
+    background-size: 22rem;
+    background-position-x: -42mm;
+    background-position-y: -48mm;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100mm;
+    height: 90mm;
+    margin-top: 2mm;
+    background: transparent;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5mm;
+    width: 80%;
+}
+
+.items .title {
+    margin-top: 10mm;
+    margin-bottom: 3mm;
+    object-position: inherit;
+    font-size: 20px;
+}
+
+.login .items input,
+button {
+    width: 70mm;
+    border: solid 1px black;
+    outline: none;
+    height: 7mm;
+}
+
+
+.login input {
+    padding-left: 3mm;
+    margin-bottom: 3mm;
+}
+
+.login .items button {
+    background-color: #f0c14b;
+}
+
+.login .items p {
+    width: 80mm;
+    line-height: 20px;
+    font-size: 1rem;
+    margin-top: 5mm;
+    overflow: hidden;
+}
