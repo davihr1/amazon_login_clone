@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +11,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     display: flex;
     align-items: center;
+    margin-top: 2mm;
     object-position: bottom;
     background: white;
     justify-content: center;
@@ -55,7 +59,7 @@ header .two {
     background: transparent;
     align-items: center;
     border-radius: 3px;
-    border: 1px solid black;
+    border: 0.1mm solid rgba(0, 0, 0, 0.445);
 }
 
 .items {
@@ -79,7 +83,13 @@ button {
     outline: none;
     height: 7mm;
 }
-
+.login .items input:focus {
+    border-color: #e77600;
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+.login .items label {
+    font-size: 14px;
+}
 
 .login input {
     padding-left: 3mm;
@@ -87,13 +97,66 @@ button {
 }
 
 .login .items button {
-    background-color: #f0c14b;
+    background: #eec459;
+    border-color: #a88734 #9c7e31 #846a29;
+    transition: 3000ms;
+}
+.login .items button:hover, button:active {
+    border-color: #a88734 #9c7e31 #846a29;
+    background: #f7b425;
 }
 
 .login .items p {
     width: 80mm;
     line-height: 20px;
-    font-size: 1rem;
+    font-size: .800rem;
     margin-top: 5mm;
     overflow: hidden;
+}
+
+.newp {
+    margin-top: 5mm;
+    width: 10rem;
+}
+.newp h5 {
+    margin-left: 6mm;
+    opacity: .7;
+    font-size: .800rem;
+    font-weight: 400;
+}
+
+.newp::after {
+    content: "";
+    width: 40mm;
+    background-color: transparent;
+    display: flex;
+    height: 1px;
+    border-top: 1px solid #e7e7e7;
+    position: fixed;
+    top: 67.900%;
+    margin-top: -2px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    margin-top: 3mm;
+    text-align: center;
+    align-items: center;
+    border-radius: 1px;
+    justify-content: center;
+    color: black;
+    font-size: .800rem;
+    width: 20rem;
+    height: 2rem;
+    background: #eff0f3;
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+}
+
+a:hover {
+    border-color: #a2a6ac #979aa1 #82858a;
+    background: #d5d6d8;
 }
