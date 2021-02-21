@@ -1,6 +1,6 @@
 ## Projeto: Techions+ /Amazon Login
 ## folder: 05,
-![](./github/amazontela.jpeg)
+![](./.github/amazontela.jpeg)
 ===
 
 ### :computer: Tecnologias:
